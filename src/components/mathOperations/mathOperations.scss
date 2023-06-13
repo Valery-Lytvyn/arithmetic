@@ -1,0 +1,27 @@
+@import '../../assets/scss_styles/global-imports';
+
+.operations {
+   @include flex-center;
+   gap: 3rem;
+
+   @include _576 {
+      gap: 1rem;
+      flex-wrap: wrap;
+   }
+
+   .label {
+      display: flex;
+      gap: .5rem;
+      padding: 5px;
+
+      input[type="radio"] {
+         display: none;
+      }
+   }
+
+   .activeOperation {
+      border: 2px solid $clr_red;
+      border-radius: 59% 41% 25% 75% / 64% 39% 61% 36%;
+   }
+
+}

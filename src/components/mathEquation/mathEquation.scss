@@ -1,0 +1,21 @@
+@import "../../assets/scss_styles/global-imports";
+
+.mathEquation {
+   @include flex-center;
+   gap: 0 1rem;
+   padding: 1rem;
+   font-size: 4rem;
+
+   @include _576 {
+      font-size: 2.5rem;
+   }
+
+   .operator {
+      font-size: 2rem;
+      color: $clr_orange;
+
+      @include _576 {
+         font-size: 1.5rem;
+      }
+   }
+}

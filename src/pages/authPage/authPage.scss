@@ -1,0 +1,28 @@
+@import '../../assets/scss_styles/global-imports';
+
+.auth {
+   @include flex-center-column;
+
+   .authForm {
+      @include flex-center-column;
+      justify-content: space-around;
+      gap: 2rem;
+
+      .inputGroup {
+         display: flex;
+         align-items: baseline;
+         gap: 1rem;
+         border-bottom: 1px solid $clr_main;
+
+         @include _576 {
+            width: 75%;
+         }
+
+         input {
+            overflow: hidden;
+            background: transparent;
+            color: $clr_gray;
+         }
+      }
+   }
+}

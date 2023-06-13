@@ -1,0 +1,5 @@
+@import "../../assets/scss_styles/global-imports";
+
+.rangeSlider {
+   @include flex-center-column;
+}

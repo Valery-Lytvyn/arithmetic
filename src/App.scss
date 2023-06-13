@@ -1,0 +1,30 @@
+@import './assets/scss_styles/global-imports';
+
+.app {
+   background-color: $clr_light_gray;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   min-height: 100vh;
+
+   .main {
+      color: $clr_main;
+      font-family: $main_font;
+      width: 100%;
+      min-height: 380px;
+      border: 3px solid $clr_main;
+      background: url(./assets/images/cage.png), $clr_white;
+      border-radius: 30% 70% 43% 57% / 56% 35% 65% 44%;
+      @include flex-center-column;
+      gap: 1rem;
+      padding: 1rem;
+
+      @include _576 {
+         border-radius: 23% 77% 13% 87% / 90% 25% 75% 10%;
+      }
+
+      .title {
+         color: $clr_red;
+      }
+   }
+}
