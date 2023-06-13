@@ -1,0 +1,13 @@
+@import "../../assets/scss_styles/global-imports";
+
+
+.homeListItem {
+   h3 {
+      color: $clr_main;
+
+      &:hover {
+         color: $clr_red;
+         text-decoration: underline;
+      }
+   }
+}

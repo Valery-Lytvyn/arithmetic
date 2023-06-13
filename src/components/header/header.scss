@@ -13,6 +13,9 @@
       text-align: center;
       @include flex-center;
 
+      a {
+         color: $clr_main;
+      }
 
       &::after {
          content: "";
@@ -26,9 +29,14 @@
       }
 
       &:hover {
-         text-decoration: underline;
+         a {
+            text-decoration: underline;
+            color: $clr_red;
+         }
       }
    }
+
+
 
    .userInfo {
       @include flex-center-column;
